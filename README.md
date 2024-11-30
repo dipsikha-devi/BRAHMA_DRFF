@@ -6,7 +6,10 @@ The reservoir operation model employed is the Standard Operating Policy (SOP) wi
   <img src="https://github.com/user-attachments/assets/59708e57-9dc6-4379-9e22-1558f9305d22" alt="BRAHMA_DRFF Diagram" width="500">
 </div>
 
-# Outputs
+## Repository Content
+This repository includes a bathymetry file in Excel format, which consists of three columns: the first column represents the chainage of the river, the second column indicates the river's width, and the third column contains the bathymetry data. Additionally, the repository provides a 24-hour inflow dataset for the reservoir. It also includes two other Excel files detailing the Reduced Levels of the sensors and hypothetical sensor readings.
+
+## Outputs
 The output of the model will generate the results of excel sheets for SOP and AOP including downstream flood levels, discharge, velocity,power generated and reliability of the system.
 
 ## Citation
