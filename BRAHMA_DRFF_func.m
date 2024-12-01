@@ -258,8 +258,8 @@ end
         a(2:24-1,k+1)=(ap(2:24-1,k)+ac(2:24-1,k))/2;                        % boundary condition (B. C at u/s is provided at the begining)
         q(2:24-1,k+1)=(qp(2:24-1,k)+qc(2:24-1,k))/2;
         
-            q(24,k)=0.4*q(1,k)+qp(24,k);                                    % intermediate boundary condition for tributaries. First tributary= 40% of inflow.
-%            
+            q(24,k)=0.4*q(1,k)+qp(24,k);                                    % intermediate boundary condition for tributaries. First tributary= 40% of inflow (RHEP).
+                                                                            % This code was prepared for RHEP with two tributary contribution. For no tributary user can simply enter 0 in place of 0.4              
  
  %First Tributary          
            
@@ -294,7 +294,7 @@ end
 
            q(62,k)=0.3*q(1,k)+qp(62,k);                                     % 30% of inflow contributed by second tributary
                                      
-  % Second Tributary         
+  % Second Tributary                                                        % for no tributary simply put 0 in place of 0.3
     
          for i=63:YY-1
             ap(i,k)=a(i,k)-(delt/(delx))*(q(i,k)-q(i-1,k));
